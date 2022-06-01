@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryDarkSecond"
+        >
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDarkSecond"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewForDialog"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_color="@color/colorWhite"
+                android:src="@drawable/app_logo"
+                app:civ_border_width="1dp"
+                />
+
+            <EditText
+                android:id="@+id/etDishTitleForDialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/et_background"
+                android:hint="Dish Title"
+                android:textColorHint="@color/colorForHint"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorWhite"
+                />
+            <EditText
+                android:id="@+id/etDishIngredientsForDialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/et_background"
+                android:hint="Dish Ingredients"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorForHint"
+                android:gravity="center"
+                android:maxLength="200"
+                android:textColor="@color/colorWhite"
+                />
+            <EditText
+                android:id="@+id/etDishRecipeForDialog"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/et_background"
+                android:hint="Detailed Recipe"
+                android:textColorHint="@color/colorForHint"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <Button
+                android:id="@+id/btnAddNow"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_background"
+                android:layout_marginTop="50dp"
+                android:text="Add Now"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

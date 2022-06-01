@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarkSecond"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignUpActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/app_icon"
+        app:civ_border_color="#FF5722"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/andromeda"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccentSecond"
+        />
+
+
+    <EditText
+        android:id="@+id/et_NameSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/et_background"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:paddingLeft="20dp"
+        android:hint="Name"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColorHint="@color/colorForHint"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:textColor="@color/colorWhite"
+        />
+    <EditText
+        android:id="@+id/et_EmailSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/et_background"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:paddingLeft="20dp"
+        android:hint="Email"
+        android:gravity="center"
+        android:textColorHint="@color/colorForHint"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:textColor="@color/colorWhite"
+        />
+    <EditText
+        android:id="@+id/et_PasswordForSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/et_background"
+        android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+        android:paddingLeft="20dp"
+        android:hint="Password"
+        android:gravity="center"
+        android:textColorHint="@color/colorForHint"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:textColor="@color/colorWhite"
+        />
+
+    <EditText
+        android:id="@+id/et_PhoneNoForSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/et_background"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:paddingLeft="20dp"
+        android:hint="Phone No"
+        android:gravity="center"
+        android:textColorHint="@color/colorForHint"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/btnSignUpNow"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Already have an account?"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDarkSecond"
+            android:text="Sign In"
+            android:textColor="@color/colorAccentSecond"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
